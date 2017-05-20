@@ -1,0 +1,34 @@
+{
+  "name": "log-promise-chain",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.babel.js",
+  "scripts": {
+    "test": "mocha **/*.spec.js",
+    "babel": "babel index.js -o index.babel.js",
+    "publish": "babel index.js -o index.babel.js && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elimydlarz/log-promise-chain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elimydlarz/log-promise-chain/issues"
+  },
+  "homepage": "https://github.com/elimydlarz/log-promise-chain#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "mocha": "^3.4.1"
+  },
+  "files": [
+    "index.babel.js"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
