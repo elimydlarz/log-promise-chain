@@ -1,12 +1,11 @@
 {
   "name": "log-promise-chain",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
   "main": "index.babel.js",
   "scripts": {
     "test": "mocha **/*.spec.js",
-    "babel": "babel index.js -o index.babel.js",
-    "publish": "babel index.js -o index.babel.js && npm publish"
+    "babel": "babel index.js -o index.babel.js"
   },
   "repository": {
     "type": "git",
