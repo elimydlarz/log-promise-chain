@@ -3,8 +3,9 @@ const log = (result) => {
   return result;
 };
 
-const logPromiseChain = (promise) => ({
-  then: (thenner) => logPromiseChain(promise.then(log).then(thenner)),
+const wrap = (promise) => ({
+  then: (thenner, catcher) => wrap(promise.then(log).then(thenner, catcher)),
+  catch: (catcher) => wrap(promise.catch(log).then(catcher)),
 });
 
-module.exports = logPromiseChain;
+module.exports = wrap;
